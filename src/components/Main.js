@@ -23,10 +23,12 @@ const Main = ({selectedPeep, peepListData}) => {
             />
           </div>
         </div>
+
         <div className="peepDetails" style={{ color: "#ffffff" }}>
           <div className="title">{activePeep.name}</div>
           <span className="itemNumber">#{activePeep.token_id}</span>
         </div>
+
         <div className="owner">
           <div className="ownerImageContainer">
             <img
@@ -36,7 +38,7 @@ const Main = ({selectedPeep, peepListData}) => {
           </div>
           <div className="ownerDetails">
             <div className="ownerNameAndHandle">
-              <div>{activePeep.owner.address}</div>
+              <div className="ownerAddress"> {activePeep.owner.address}</div>
               <div className="ownerHandle">@plumshot</div>
             </div>
             <div className="ownerLink">
